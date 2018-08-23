@@ -21,6 +21,8 @@ const searchCriteria = {
     <p>Search Component</p>
     <ul>
         <li  ng-repeat="item in $ctrl.recipes" track by $index><p>{{item.recipe.label}}<button ng-click"$ctrl.add(item.recipe.label)">Add to favorites</button></p>
+        <img src="{{item.recipe.image}}" >
+        <a href="{{item.recipe.url}}">link</a>
         <p ng-repeat="list in item.recipe.ingredientLines"track by $index>{{list}}<p>            
         </li>
     </ul>
