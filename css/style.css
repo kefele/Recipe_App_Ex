@@ -43,15 +43,15 @@ button{
     background:#505355;
     color: #eee;
     font-size: 20px;
-    width: 90%;
+    width: 10%;
 
     cursor: pointer;
 }
 
 input{
     padding: 14px;
-    margin: 20px;
-    height: 35px;
+    margin: 10px;
+    height: 25px;
     border: solid #eee 1px;
     border-radius: 5px;
 }
