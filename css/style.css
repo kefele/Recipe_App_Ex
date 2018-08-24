@@ -19,18 +19,24 @@
 ul{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px
     
 }
-/* li{
-    width: 400px;
+li{
+   
+   border: 2px;
+   border-style: solid;
+   /* justify-content: center;
+   align-content: center;
+   flex-wrap: wrap; */
 
-} */
+}
 
 .data{
 
     background: beige;
     margin: 0 auto;
-    width: 400px;
+    width: 350px;
     border-radius: 5px;
     padding: 20px;
     list-style: none;
