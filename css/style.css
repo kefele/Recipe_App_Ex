@@ -3,68 +3,95 @@
     padding: 0;
 }
 
-body{
-    background: #eee;
-
-}
-
-.container{
-    margin-top: 60px;
-    width: 400px;
-    border-radius: 15px;
-    background: white;
-    margin: 0 auto;
+#searchPage{
+    background: slategray;
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px black
 
-img{
-    height: 400px;
-    /* background-image: url(Taz.jpg); */
-    /* background-size: cover; */
-    background-position: center;
 }
-
-#proShow{
-    padding: 15px;
-}
-
-span{
-    color: #eee;
-}
-
-p{
-    margin-top: 20px;
-}
-button{
-    padding: 10px;
-    margin: 25px 15px 25px 15px;
-    border-radius: 20px;
-    background:#505355;
-    color: #eee;
-    font-size: 20px;
-    width: 10%;
-
+.ingredientP{
     cursor: pointer;
 }
 
-input{
-    padding: 14px;
-    margin: 10px;
-    height: 25px;
-    border: solid #eee 1px;
-    border-radius: 5px;
-}
-
-form.proEdit{
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+ul{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    
+}
+li{
+   
+   border: 2px;
+   border-style: solid;
+   /* justify-content: center;
+   align-content: center;
+   flex-wrap: wrap; */
+
 }
 
-.proEdit button{
-    width: 100%;
-    margin: 15px 0;
+.data, .favReturn{
+
+    background: beige;
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px;
+    list-style: none;
+   text-align: center;
+
 }
+label{
+    font-family: "Roboto", "sans-serif";
+    font-size: 18px;
+
+}
+.back{
+    margin: 0 auto;
+    text-align: center;
+}
+.btnsInSearch{
+    width: 200px;
+}
+
+
+button {
+    border-style: none;
+    background: green;
+    font-family: 'Lobster', cursive;
+    color: white;
+    width: 650px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  button:hover {
+     background: lightgreen;
+  }
+  
+  input {
+    width: 70%;
+    height: 30px;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    
+  }
+  
+  #body {
+    padding-top: 30px;
+    height: 1000px;
+    /* background: red; */
+    /* background-image: url("/css/images/jennifer-pallian-200439-unsplash.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
