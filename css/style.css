@@ -15,11 +15,14 @@
     box-shadow: 20px 20px 20px black
 
 }
+.ingredientP{
+    cursor: pointer;
+}
 
 ul{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px
+    padding-top: 40px;
     
 }
 li{
@@ -32,7 +35,7 @@ li{
 
 }
 
-.data{
+.data, .favReturn{
 
     background: beige;
     margin: 0 auto;
@@ -40,12 +43,20 @@ li{
     border-radius: 5px;
     padding: 20px;
     list-style: none;
+   text-align: center;
 
 }
 label{
     font-family: "Roboto", "sans-serif";
     font-size: 18px;
 
+}
+.back{
+    margin: 0 auto;
+    text-align: center;
+}
+.btnsInSearch{
+    width: 200px;
 }
 
 
@@ -54,7 +65,7 @@ button {
     background: green;
     font-family: 'Lobster', cursive;
     color: white;
-    width: 60%;
+    width: 650px;
     height: 40px;
     border-radius: 5px;
     margin: 20px;
