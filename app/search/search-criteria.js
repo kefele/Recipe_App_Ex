@@ -26,10 +26,10 @@ const searchCriteria = {
                     <p>{{item.recipe.label}}</p>
 
                     <img src="{{item.recipe.image}}" >
-                    <button ng-click="$ctrl.ingredients(1)">Ingredients</button>
+                    <button ng-init="num=0" ng-click="num= num+1">Ingredients</button>
                     <a href="{{item.recipe.url}}" target="_blank">link</a>
-                    <button ng-click="$ctrl.add(item.recipe.label)">Add</button>
-                    <p ng-show="disIngredients ==1" ng-repeat="list in item.recipe.ingredientLines"track by $index>{{list}}</p>            
+                    <button  ng-click="$ctrl.add(item.recipe.label)">Add</button>
+                    <p ng-if="num ==1" ng-repeat="list in item.recipe.ingredientLines"track by $index>{{list}}</p>            
                 </li>
             </ul>
  
@@ -48,10 +48,7 @@ const searchCriteria = {
             SearchService.setFavFood(newItem);
             $location.path("/favorites-page")
         }
-        vm.ingredients = (num) => {
-            let disIngredients = num;
-            return disIngredients;
-        }
+        
 
 
     }]
