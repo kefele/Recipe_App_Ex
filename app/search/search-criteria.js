@@ -1,14 +1,14 @@
 "use strict"
 const searchCriteria = {
     template: `
-    <div id="body">
+    
     <div id="searchPage">
-    <label>Ingredients</label>
-    <input type ="text" ng-model="$ctrl.ingredientOne">
-    <label>Exclude Ingredients: </label>
-    <input type="text" ng-model="$ctrl.excludes">
-    select a diet:
-   
+        <label>Ingredients</label>
+        <input type ="text" ng-model="$ctrl.ingredientOne">
+        <label>Exclude Ingredients: </label>
+        <input type="text" ng-model="$ctrl.excludes">
+    
+        select a diet:
 
         <select ng-model="$ctrl.diet">
         <option value="balanced">Balanced
@@ -16,10 +16,8 @@ const searchCriteria = {
         <option value="high-fiber">High Fiber
         <option value="low-fat">Low Fat
         <option value="low-carb">Low Carb
-        
-        </select>
-   
-    <button ng-click="$ctrl.search($ctrl.ingredientOne, $ctrl.excludes, $ctrl.diet)">Search for Recipes</button>
+        </select>   
+        <button ng-click="$ctrl.search($ctrl.ingredientOne, $ctrl.excludes, $ctrl.diet)">Search for Recipes</button>
     </div>
     <ul>
         <li class="data"  ng-repeat="item in $ctrl.recipes" track by $index>
